@@ -1,7 +1,7 @@
 import React from "react";
-import placa2 from "./assets/img/3090.jpg"
-import placa3 from "./assets/img/3080ti.jpeg"
-import placa4 from "./assets/img/6900.jpg"
+import placa2 from "../assets/img/3090.jpg"
+import placa3 from "../assets/img/3080ti.jpeg"
+import placa4 from "../assets/img/6900.jpg"
 
 
 
