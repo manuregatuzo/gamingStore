@@ -3,10 +3,8 @@
   padding: 0;
 }
 
-
 .fondo-header{
-  background-color: orangered;  
-  
+  background-color: orangered; 
 }
 
 .link-header{
@@ -17,3 +15,17 @@
 .fondo-naranja{
   background-color: orangered;
 }
+
+.prueba{
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgMain{
+  width: 100%;
+}
+
+.imgCart{
+  margin-right: 25px;
+}
+
