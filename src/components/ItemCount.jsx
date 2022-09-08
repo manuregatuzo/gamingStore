@@ -22,8 +22,8 @@ const decrementar = () => {
 
 
 return (
-    <div>    
-        <div>
+    <div className='countGral'>    
+        <div className='text-center'>
             <button id="buttonDown" className="buttonCount" onClick={decrementar}>-</button>
         Cantidad: {contador}
         <button id="buttonUp" className="buttonCount" onClick={incrementar}>+</button>

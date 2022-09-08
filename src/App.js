@@ -3,17 +3,17 @@ import Destacado from './components/Destacado';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import ItemListContainer from './components/ItemListContainer';
-import Promos from './components/Promos';
+import Titulo from './components/Titulo';
 
 function App() {
   return (
-    <div className='container-fluid'>
+    <div>
     <Header />
     <hr />
-    <ItemListContainer props="Bienvenidos a Gaming Store"/>
+    <Titulo props="Bienvenidos a Gaming Store"/>
     <Destacado />
     <hr />
-    <Promos />    
+    <ItemListContainer />          
     <Footer />
     </div>
   );

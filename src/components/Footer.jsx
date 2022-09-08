@@ -6,8 +6,8 @@ import twitter from "../assets/img/SM-RRSS-04.png"
 
 const Footer = () => {
     return (
-        <div className="row fondo-naranja p-4 text-white">
-            <div className="col">
+        <div className="row py-3 fondo-naranja text-white">
+            <div>
             <div className="container">   
                 <hr />                         
                 <div className="row">
