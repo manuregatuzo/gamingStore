@@ -7,7 +7,7 @@ const ItemList = ({items}) =>{
         <div>
             {items.map(item => 
             <div className="cardCss" key={item.id}> 
-                <Item  id={item.id} nombre={item.nombre} imagen={item.imagen} precio={item.precio}/>
+                <Item  item={item}/>
             </div>
             )}
         </div>

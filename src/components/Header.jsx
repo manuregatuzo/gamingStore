@@ -7,7 +7,7 @@ const Header = () => {
         <div className=" fondo-header ">
             <ul className="nav d-flex align-items-center prueba">
                 <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#"><img src={logo} width="48" alt="logo"/></a>
+                    <a className="nav-link active" aria-current="page" href="/"><img src={logo} width="48" alt="logo"/></a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link link-header" href="#">Productos</a>

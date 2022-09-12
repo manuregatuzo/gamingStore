@@ -2,20 +2,25 @@ import './App.css';
 import Destacado from './components/Destacado';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer';
 import Titulo from './components/Titulo';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
   return (
     <div>
+    <BrowserRouter>
     <Header />
-    <hr />
     <Titulo props="Bienvenidos a Gaming Store"/>
-    <Destacado />
-    <hr />
-    <ItemListContainer />          
+    <Routes>
+    <Route exact path="/" element={<ItemListContainer />  } />        
+    <Route exact path={"item/:id"} element={<ItemDetailContainer /> } />
+    </Routes>
+    
     <Footer />
-    </div>
+    </BrowserRouter>
+    </div>    
   );
 }
 

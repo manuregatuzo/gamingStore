@@ -29,6 +29,11 @@
 .imgMain{
   width: 100%;
 }
+.imgContainer{
+  max-height: 40rem;
+
+  min-height: 35rem;
+}
 
 .imgCart{
   margin-right: 25px;
@@ -38,7 +43,15 @@
   display: flex;
   width: 30%;
   float: left;
+  min-height: 1000px;
 }
+
+.card{
+  min-height: 55rem;
+  max-width: 30rem;
+}
+
+
 
 /* BTN CARDS */
 
@@ -63,4 +76,16 @@
   color: red;
   width: 5%;
   border-radius: 10%;
+}
+.btnGral{
+  background-color: grey;
+  text-decoration: none;
+  color: white;
+  border: 1px solid black;
+  padding: 1%;
+  border-radius: 8px;
+  font-weight: 700;
+}
+.btnGral:hover{
+  color: #010101;
 }
