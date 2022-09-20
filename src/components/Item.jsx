@@ -11,11 +11,11 @@ const Item = ({item}) =>{
             <div className="card" >
                 <div className="imgContainer">
 
-                <img src={item.thumbnail} className="card-img-top imgContainer" alt="nombre" />
+                <img src={item.imagen} className="card-img-top imgContainer" alt="nombre" />
                 </div>
             <div className="card-body">
-                <h5 className="card-title text-center">{item.title}</h5>
-                <p className="card-text text-center">${item.price}</p>
+                <h5 className="card-title text-center">{item.nombre}</h5>
+                <p className="card-text text-center">${item.precio}</p>
                 <ItemCount  stock={5} initial={0} />
                 <div className="text-center py-4">
                 <Link className="btnGral" to={`/item/${item.id}` }>Ver detalle</Link>

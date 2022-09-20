@@ -7,7 +7,7 @@ const ItemList = ({items}) =>{
         <div>
             {items.map(item => 
             <div className="cardCss" key={item.id}> 
-                <Item  item={item}/>
+                <Item item={item}/>
             </div>
             )}
         </div>
