@@ -6,9 +6,11 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer';
 import Titulo from './components/Titulo';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Context from "./components/Context"
 
 function App() {
   return (
+    <Context>
     <div>
     <BrowserRouter>
     <Header />
@@ -21,7 +23,8 @@ function App() {
     
     <Footer />
     </BrowserRouter>
-    </div>    
+    </div>  
+    </Context>
   );
 }
 

@@ -1,26 +1,21 @@
 import React from 'react'
 import ItemCount from './ItemCount'
 import { Link } from "react-router-dom";
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { CartContext } from './Context';
 
 
 
 
   const ItemDetail = ({item}) => {
-  
-    const [cart, setCart] = useState([]);
-  
-    const addTooCart = () => {
-    
-      setCart([
-        {
-          item
-        },
-      ]);
-      console.log(cart)
-      
-    };
+    const {addItem} = useContext(CartContext)    
+    const [counter, setCounter] = useState(0)  
 
+
+    const onAdd = (item, counter) => {
+      setCounter(counter)
+      addItem(item, counter)
+    }
 
 
   return (
@@ -30,12 +25,7 @@ import { useState } from 'react';
             <div className="card-body">
                 <h5 className="card-title text-center">{item.nombre}</h5>
                 <p className="card-text text-center">${item.precio}</p>
-                <ItemCount  stock={5} initial={0} />
-                <div className="text-center py-4">
-                <a onClick={addTooCart} className="btnGral">Añadir al carrito</a> 
-                <a href="/cart" className="btnGral">Finalizar compra</a>
-                </div>
-                <Link to={"/"} className="btnGral">Volver al inicio</Link>
+                {counter === 0 ? <ItemCount initial={1} stock={5} onAdd={onAdd} /> : <Link to={"/cart"} className="btn fondo_naranja">Ir al Carrito</Link>}
             </div>
         </div>
         </div>
