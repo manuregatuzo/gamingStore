@@ -1,25 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/img/logo.png";
 import Carrito from "./Carrito";
+import { useContext } from "react";
+import { CartContext } from "./Context";
 
 const Header = () => {
+    const {cart} = useContext(CartContext) 
     return(
         <div className=" fondo-header ">
             <ul className="nav d-flex align-items-center prueba">
                 <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="/"><img src={logo} width="48" alt="logo"/></a>
+                    <Link className="nav-link active" aria-current="page" to={"/"}><img src={logo} width="48" alt="logo"/></Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link link-header" href="#">Productos</a>
+                    <Link className="nav-link link-header" to={"#"}>Productos</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link link-header" href="#">Quienes somos</a>
+                    <Link className="nav-link link-header" to={"#"}>Quienes somos</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link  link-header" href="#">Ofertas</a>
+                    <Link className="nav-link  link-header" to={"#"}>Ofertas</Link>
                 </li>
                 <div>
-                <li><Carrito /></li>
+                {cart.length <= 0 ? null : <li><Carrito /></li>}
+                
                 </div>                
                 </ul>
         </div>

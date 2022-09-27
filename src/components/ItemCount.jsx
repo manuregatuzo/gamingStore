@@ -34,6 +34,7 @@ const agregarProductos = () => {
         setCounter(itemStock - counter); 
     
     }   
+
 }
 
 useEffect(() => { 
@@ -47,7 +48,7 @@ return (
         Cantidad: {counter}
         <button id="buttonUp" className="buttonCount" onClick={incrementar}>+</button>
         </div>
-        <button className="btnGral" onClick={() => {agregarProductos()}}>
+        <button className="btnEliminar" onClick={() => {agregarProductos()}}>
         Añadir al carrito
         </button>
 

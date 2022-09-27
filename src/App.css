@@ -89,3 +89,56 @@
 .btnGral:hover{
   color: #010101;
 }
+
+.choto{
+  width: 100%;
+}
+
+
+.tableCart {
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.tdCart {
+  border: 1px solid black;
+  margin: 3%;
+  width: 20rem;
+  padding-right: 2%;
+  align-items: center;
+}
+
+
+
+.btnEliminar {
+  text-decoration: none;
+  height: 50px;
+  width: 10rem;
+  justify-content: center;
+  color: #010101;
+  background-color: grey;
+  display: flex;
+  margin: auto;
+  padding: 1%;
+  margin-bottom: 3%;
+  border-radius: 10px;
+  border: 1px solid black;
+  outline: none;
+  margin-top: 3%;
+  align-items: center;
+}
+
+
+
+.backCart {
+  color: #010101;
+  padding: 1%;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  width: 15%;
+  margin: auto;
+  margin-top: 5%;
+  background-color: cadetblue;
+  border-radius: 5%;
+}

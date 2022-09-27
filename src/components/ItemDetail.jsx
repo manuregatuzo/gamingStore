@@ -12,7 +12,7 @@ import { CartContext } from './Context';
     const [counter, setCounter] = useState(0)  
 
 
-    const onAdd = (item, counter) => {
+    const onAdd = (counter) => {
       setCounter(counter)
       addItem(item, counter)
     }
@@ -25,7 +25,7 @@ import { CartContext } from './Context';
             <div className="card-body">
                 <h5 className="card-title text-center">{item.nombre}</h5>
                 <p className="card-text text-center">${item.precio}</p>
-                {counter === 0 ? <ItemCount initial={1} stock={5} onAdd={onAdd} /> : <Link to={"/cart"} className="btn fondo_naranja">Ir al Carrito</Link>}
+                {counter === 0 ? <ItemCount initial={1} stock={5} onAdd={onAdd} /> : <Link to={"/cart"} className="btn fondo_naranja btnEliminar">Ir al Carrito</Link>}
             </div>
         </div>
         </div>
