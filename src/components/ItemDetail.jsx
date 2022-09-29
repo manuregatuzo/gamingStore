@@ -6,7 +6,6 @@ import { CartContext } from './Context';
 
 
 
-
   const ItemDetail = ({item}) => {
     const {addItem} = useContext(CartContext)    
     const [counter, setCounter] = useState(0)  
