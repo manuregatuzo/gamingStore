@@ -11,7 +11,7 @@ const Cart = () => {
     console.log(cart);
     return(
         
-        <div>
+        <div className="cartCompra">
             <div>
         {cart.length <= 0 ? (
         <div> <Link to={"/"} className="tdCart btnEliminar">Volver al inicio </Link> </div>
@@ -40,8 +40,9 @@ const Cart = () => {
 
     ))}
         <div>
-        <td colSpan={3} className="text-end fw-bold">Total a Pagar</td>
+        <td colSpan={3} className="text-right fw-bold">Total a Pagar</td>
         <td className="text-end fw-bold">${compraTotal()}</td>
+        <Link to={"/OrdenFinal"} className="btnEliminar">Finalizar Orden</Link>
         </div>
         </div>
     )

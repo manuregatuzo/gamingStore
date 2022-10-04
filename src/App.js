@@ -7,6 +7,7 @@ import Titulo from './components/Titulo';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Context from "./components/Context"
 import Cart from './components/Cart';
+import FormCompra from './components/FormCompra';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
     <Route exact path="/" element={<ItemListContainer />  } />        
     <Route exact path={"item/:id"} element={<ItemDetailContainer /> } />    
     <Route exact path="/cart" element={<Cart />  } />        
-
+    <Route exact path="/OrdenFinal" element={<FormCompra />  } />        
     </Routes>    
     <Footer />
     </BrowserRouter>

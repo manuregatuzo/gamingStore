@@ -18,10 +18,10 @@ import { CartContext } from './Context';
 
 
   return (
-    <div className ="py-3 ">
-            <div className="card" >
-                <img src={item.imagen} className="card-img-top" alt="nombre" />
-            <div className="card-body">
+    <div className ="py-3">
+            <div className="cardDetail d-flex " >
+                <img src={item.imagen} className="w-50" alt="nombre" />
+            <div className="card-body cardDescription">
                 <h5 className="card-title text-center">{item.nombre}</h5>
                 <p className="card-text text-center">${item.precio}</p>
                 {counter === 0 ? <ItemCount initial={1} stock={5} onAdd={onAdd} /> : <Link to={"/cart"} className="btn fondo_naranja btnEliminar">Ir al Carrito</Link>}
