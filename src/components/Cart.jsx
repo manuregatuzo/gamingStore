@@ -37,7 +37,6 @@ const Cart = () => {
         <button className="tdCart btnEliminar" onClick={() => {eliminarItem(item.id)}}>Eliminar item</button>
         </div>
 
-
     ))}
         <div>
         <td colSpan={3} className="text-right fw-bold">Total a Pagar</td>

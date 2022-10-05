@@ -7,8 +7,6 @@ const Destacado = () => {
         <div className="text-center">
             <img src={imagen} alt="Dia del gamer" className="imgMain" />       
         </div>
-
-
         
     )
 }
