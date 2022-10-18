@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import {CartContext} from "./Context";
-import carrito from "../assets/img/carrito.png";
-import cesto from "../assets/img/trash3.svg";
+import {CartContext} from "../Context/Context";
+import carrito from "../../assets/img/carrito.png";
+import cesto from "../../assets/img/trash3.svg";
 
 const Carrito = () =>{
 

@@ -1,5 +1,5 @@
 import React from "react";
-import imagen from "../assets/img/destacado.jpg"
+import imagen from "../../assets/img/destacado.jpg"
 
 
 const Destacado = () => {

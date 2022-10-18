@@ -1,8 +1,8 @@
 import React from "react";  
-import facebook from "../assets/img/SM-RRSS-01.png"
-import youtube from "../assets/img/SM-RRSS-02.png"
-import instagram from "../assets/img/SM-RRSS-03.png"
-import twitter from "../assets/img/SM-RRSS-04.png"
+import facebook from "../../assets/img/SM-RRSS-01.png"
+import youtube from "../../assets/img/SM-RRSS-02.png"
+import instagram from "../../assets/img/SM-RRSS-03.png"
+import twitter from "../../assets/img/SM-RRSS-04.png"
 
 const Footer = () => {
     return (

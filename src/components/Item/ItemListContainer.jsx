@@ -2,9 +2,9 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import ItemList from "./ItemList";
-import Destacado from './Destacado';
+import Destacado from '../Header/Destacado';
 import { collection, getDocs } from "firebase/firestore";
-import {db} from "../index"
+import {db} from "../../index"
 
 
 const ItemListContainer = () =>{

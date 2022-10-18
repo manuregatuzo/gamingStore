@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { CartContext } from "./Context";
+import { CartContext } from "../Context/Context";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import moment from "moment/moment";
 
@@ -68,7 +68,7 @@ const FormCompra = () => {
                     </table>
                 </div>
             </div>
-            : orderId !== "" ? <div> Orden de compra generada con el id {orderId}</div> : <div className="alert alert-danger text-center" role="alert">No se encontraron Productos!</div>}
+            : orderId !== "" ? <div className="idcss"> <h2 className="idcompra">Orden de compra generada con el id: {orderId}</h2></div> : <div className="alert alert-danger text-center" role="alert">No se encontraron Productos!</div>}
         </div>
     )
 }
